@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/TransactionFragment"
-        android:name="com.example.testwallet.TransactionFragment"
+        android:name="com.example.testwallet.NewTransactionFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/transaction_fragment">
         <action

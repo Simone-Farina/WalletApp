@@ -7,18 +7,17 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.testwallet.database.TransactionDatabase
 import com.example.testwallet.databinding.TransactionFragmentBinding
-import com.example.testwallet.viewmodels.TransactionViewModel
-import com.example.testwallet.viewmodels.TransactionViewModelFactory
+import com.example.testwallet.viewmodels.NewTransactionViewModel
+import com.example.testwallet.viewmodels.NewTransactionViewModelFactory
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
-class TransactionFragment : Fragment() {
+class NewTransactionFragment : Fragment() {
 
     lateinit var binding: TransactionFragmentBinding
 
@@ -34,9 +33,9 @@ class TransactionFragment : Fragment() {
 
         val dataSource = TransactionDatabase.getInstance(application).transactionDatabaseDao
 
-        val viewModelFactory = TransactionViewModelFactory(dataSource)
+        val viewModelFactory = NewTransactionViewModelFactory(dataSource)
 
-        val transactionViewModel = ViewModelProvider(this, viewModelFactory).get(TransactionViewModel::class.java)
+        val transactionViewModel = ViewModelProvider(this, viewModelFactory).get(NewTransactionViewModel::class.java)
 
         binding.transactionViewModel = transactionViewModel
 

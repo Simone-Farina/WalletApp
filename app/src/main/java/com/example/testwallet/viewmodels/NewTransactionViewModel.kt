@@ -15,7 +15,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class TransactionViewModel(private val database: TransactionDatabaseDao): ViewModel() {
+class NewTransactionViewModel(private val database: TransactionDatabaseDao): ViewModel() {
 
     fun onConfirmTransaction(amount: Double, category: TransactionCategories) {
         viewModelScope.launch {
