@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/HomeFragment"
-        android:name="com.example.testwallet.HomeFragment"
+        android:name="com.example.testwallet.home.HomeFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/home_fragment">
 
@@ -17,11 +17,17 @@
     </fragment>
     <fragment
         android:id="@+id/TransactionFragment"
-        android:name="com.example.testwallet.NewTransactionFragment"
+        android:name="com.example.testwallet.newtransaction.NewTransactionFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/transaction_fragment">
         <action
             android:id="@+id/action_TransactionFragment_to_HomeFragment"
             app:destination="@id/HomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/TransactionListFragment"
+        android:name="com.example.testwallet.transactionlist.TransactionListFragment"
+        android:label="@string/third_fragment_label"
+        tools:layout="@layout/transaction_list_fragment">
     </fragment>
 </navigation>

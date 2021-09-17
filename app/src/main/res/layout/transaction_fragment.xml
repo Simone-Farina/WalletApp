@@ -6,7 +6,7 @@
     <data>
         <variable
             name="transactionViewModel"
-            type="com.example.testwallet.viewmodels.NewTransactionViewModel" />
+            type="com.example.testwallet.newtransaction.NewTransactionViewModel" />
 
         <import type="android.text.InputType" />
     </data>
@@ -14,7 +14,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".NewTransactionFragment">
+        tools:context=".newtransaction.NewTransactionFragment">
 
         <Button
             android:id="@+id/confirm_button"

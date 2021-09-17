@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         fabButton.setOnClickListener {
             // TODO: check if a better way exists
             if (navController.currentDestination?.id != R.id.TransactionFragment) {
-                navController.navigate(R.id.action_HomeFragment_to_TransactionFragment)
+                navController.navigate(R.id.TransactionFragment)
             }
         }
 

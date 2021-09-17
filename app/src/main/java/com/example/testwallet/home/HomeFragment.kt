@@ -1,4 +1,4 @@
-package com.example.testwallet
+package com.example.testwallet.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,14 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.findNavController
+import com.example.testwallet.R
 import com.example.testwallet.database.TransactionDatabase
-import com.example.testwallet.database.TransactionDatabaseDao
 import com.example.testwallet.databinding.HomeFragmentBinding
-import com.example.testwallet.viewmodels.HomeViewModel
-import com.example.testwallet.viewmodels.HomeViewModelFactory
 
 
 class HomeFragment : Fragment() {

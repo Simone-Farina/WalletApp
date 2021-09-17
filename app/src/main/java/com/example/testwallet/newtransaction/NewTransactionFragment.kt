@@ -1,4 +1,4 @@
-package com.example.testwallet
+package com.example.testwallet.newtransaction
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,10 +9,11 @@ import android.widget.ArrayAdapter
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import com.example.testwallet.R
+import com.example.testwallet.TransactionCategories
 import com.example.testwallet.database.TransactionDatabase
 import com.example.testwallet.databinding.TransactionFragmentBinding
-import com.example.testwallet.viewmodels.NewTransactionViewModel
-import com.example.testwallet.viewmodels.NewTransactionViewModelFactory
+import com.example.testwallet.stringToTransactionCategory
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
